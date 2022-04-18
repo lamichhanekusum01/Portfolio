@@ -1,8 +1,9 @@
 import React from './MyRouter.js'
 import { Routes, Route } from "react-router-dom";
-import Home from '../components/body/Home';
-import Contact from '../components/contact/Contact.js';
-import Projects from '../components/portfolio/Projects.js';
+import Home from '../pages/body/Home.js';
+import Contact from '../pages/contact/Contact.js';
+import Projects from '../pages/portfolio/Projects.js';
+
 
 
 
