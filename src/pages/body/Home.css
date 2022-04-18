@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+}
+
+h1 span {
+  color: red;
+}
+
+.image {
+  background-image: url("../../assets/Image/Intro-Image.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: 60% -70%;
+  position: absolute;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=Home.css.map */
