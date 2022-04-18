@@ -5,8 +5,8 @@ import Type from "./Type.js";
 
 const Home = () => {
   return (
-    <>
-      <div className="wrapper">
+    <div className="my_image">
+      <div className="wrapper ">
         <div className="container">
           <div className="row">
             <div className="col introduction">
@@ -35,11 +35,11 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="col image"></div>
+            <div className="col "></div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
