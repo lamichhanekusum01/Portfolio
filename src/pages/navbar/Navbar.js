@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.scss'
-import NavElement from './NavElement'
+import NavElement from '../../components/navbar/NavElement'
 
 function Navbar() {
   return (
@@ -9,12 +9,13 @@ function Navbar() {
         <a href="kusum" className="logo">Kusum</a>
 
         <ul>
-            <NavElement src='/' title="Home"/>
+          <NavElement src='/' title="Home"/>
             <NavElement src='/Portfolio' title="Portfolio"/>
             <NavElement src='/Contact' title="Contact"/>
             
             
         </ul>
+
 
     </nav>
     </div>
