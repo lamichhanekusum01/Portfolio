@@ -1,5 +1,7 @@
+
 import React, { useState, useEffect } from "react";
 import "../contact/Contact.scss"
+import axios from "axios";
 
 function Contact ()  {
     const initialValues = { name: "", email: "", textarea: ""};
@@ -8,30 +10,38 @@ function Contact ()  {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
-    console.log(formValues);
   };
   const checkValidate = () => {
     setFormErrors(validate(formValues));
+    
   };
   const handleSubmit = (e) => {
-    e.preventDefault();
+     e.preventDefault();
     setFormErrors(validate(formValues));
     if (Object.keys(formErrors).length === 0) {
-      setFormValues(initialValues);
+    
+              axios
+          .post("http://localhost:4000/contact/", {
+            fullname: formValues.name,
+            email: formValues.email,
+            message: formValues.textarea,
+          })
+          .then((res) => console.log(res))
+          .catch((err) => console.log(err));
+        setFormValues(initialValues);
+      }
       
     }
-  };
+
   const validate = (values) => {
     const errors = {};
 
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    const nameregex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/i;
+   
     if (!values.name) {
       errors.name = "Fullname is required";
     }
-    else if (!nameregex.test(values.name)) {
-      errors.name = "This is not a valid name";
-    }
+   
     if (!values.email) {
       errors.email = "email is required";
     } else if (!regex.test(values.email)) {
@@ -42,8 +52,8 @@ function Contact ()  {
     }
     return errors;
   };
-    
-  return (
+
+    return (
     <section id="contact">
     <div class="contact-box">
       <div class="contact-links">
@@ -64,7 +74,7 @@ function Contact ()  {
         </div>
       </div>
       <div class="contact-form-wrapper">
-        <form onSubmit={handleSubmit}>
+        <form >
           <div class="form-item">
             <input type="text" name="name" onChange={handleChange} onBlur={checkValidate} value={formValues.name}/>
             <label>Name:</label>
@@ -77,17 +87,18 @@ function Contact ()  {
 
           </div>
           <div class="form-item">
-            <textarea class="" name="textarea" onChange={handleChange} onBlur={checkValidate} value={formValues.textarea}></textarea>
+            <textarea class="text" name="textarea" onChange={handleChange} onBlur={checkValidate} value={formValues.textarea}></textarea>
             <label>Message:</label>
             <p> {formErrors.textarea}</p>
 
           </div>
-          <button class="submit-btn">Send</button>  
+          <button onClick={handleSubmit} class="submit-btn">Send</button>  
         </form>
       </div>
     </div>
   </section>
   )
 }
+
 
 export default Contact
