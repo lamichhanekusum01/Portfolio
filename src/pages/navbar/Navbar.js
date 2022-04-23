@@ -11,6 +11,7 @@ function Navbar() {
         <ul>
           <NavElement src='/' title="Home"/>
             <NavElement src='/Portfolio' title="Portfolio"/>
+            <NavElement src='/Portfolio' title="About me"/>
             <NavElement src='/Contact' title="Contact"/>
             
             
