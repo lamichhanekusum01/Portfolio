@@ -4,9 +4,12 @@ img{
   height:105px;
   width:100%;
 }
-
+// .container{
+//   width: 100%;
+// }
 .item{
  padding: 20px;
+ flex: 33.33%;
 }
 .item-card{
   transition:0.5s;

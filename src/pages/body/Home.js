@@ -9,10 +9,14 @@ const Home = () => {
       <div className="wrapper ">
         <div className="container">
           <div className="row">
+            
             <div className="col introduction">
+            
               <div className="intro">
+                <div className="laptop"><i class="fa fa-laptop" aria-hidden="true"></i></div>
+
                 <h1>
-                  I'm <span>Kusum</span> Lamichhane
+                  I'm <span>Kusum</span> Lamichhane 
                 </h1>
                 <p>
                 
@@ -22,16 +26,14 @@ const Home = () => {
               </div>
               <div className="social">
                 <SocialIcon
-                  src={"https://www.facebook.com/kusum.lamichhane.9/"}
-                  icon={"fab fa-facebook-f"}
+                 name="github"
+
                 />
                 <SocialIcon
-                  src={"https://www.instagram.com/kushum__/"}
-                  icon={"fab fa-instagram"}
+                  name="email"
                 />
                 <SocialIcon
-                  src={"https://www.linkedin.com/in/kusum-lamichhane/"}
-                  icon={"fab fa-linkedin-in"}
+                  name="linkedin"
                 />
               </div>
             </div>
