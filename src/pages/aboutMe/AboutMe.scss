@@ -1,17 +1,10 @@
 @import"../../style/CommonStyle/variables.scss";
 .about-me{
 .container{
-<<<<<<< Updated upstream
-    display: flex; 
-    justify-content: center;
-    flex-direction: row; 
-    gap: 2rem;
-=======
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
->>>>>>> Stashed changes
   
 }
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
@@ -99,12 +92,8 @@ h3 {
   color:$secondary-color ;
 }
 .education
-<<<<<<< Updated upstream
-{ h1{
-=======
 { 
   h1{
->>>>>>> Stashed changes
   display: flex;
   align-items: center;
   justify-content: center;
