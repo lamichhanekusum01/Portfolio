@@ -1,0 +1,108 @@
+@import"../../style/CommonStyle/variables.scss";
+.about-me{
+.container{
+    display: flex; 
+    justify-content: center;
+    flex-direction: row; 
+    gap: 2rem;
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #00b8ff;
+  --dark-grey: #282a2b;
+  --light-grey: #8d98a1;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: regular;
+  color: var(--light-grey);
+}
+
+.portfolio-container {
+  width: 1134px;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 1.5em;
+}
+
+.hero {
+  height: 860px;
+  display: grid;
+  grid-template-columns: repeat(12,minmax(10px,1fr));
+  grid-column-gap: 12px;
+}
+
+.hero--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column: 1 / span 5;
+  padding: 100px 0;
+}
+
+.hero--bio {
+  grid-column: 7 / span 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--dark-grey);
+  margin-bottom: .785em;
+  position: relative;
+}
+
+// h1::before {
+//   content: "";
+//   width: 100px;
+//   height: 4px;
+//   position: relative;
+//   background: #333;
+//   left: -135px;
+//   top: 30px; 
+// }
+
+h3 {
+  font-size: 2.2rem;
+}
+
+.basic-info {
+  font-size: 1.5rem;
+  line-height: 155%;
+  padding-block: 2em;
+}
+
+.col
+{text-align: center;
+ 
+
+}
+.title {
+  color:$secondary-color ;
+}
+.education
+{ h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:$secondary-color ;
+  padding:2rem;
+ 
+}
+}
+.education{
+  padding: 2rem;
+}
+
+}

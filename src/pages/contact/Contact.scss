@@ -14,22 +14,26 @@
   margin-top: 30px;
   margin-bottom: 30px;
 
-  .contact-box {
+ .contact-box {
+
     width: clamp(100px, 90%, 1000px);
-    margin: 80px 50px;
+    margin: 10px 80px 0px 50px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .links {
+
+  .links{
+
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 80px;
   }
 
-  .contact-links,
-  .contact-form-wrapper {
+  
+  .contact-links, .contact-form-wrapper {
+
     width: 50%;
     padding: 8% 5% 10% 5%;
   }
@@ -83,8 +87,9 @@
     transform: scale(.95, 1);
   }
 
-
-  links {
+  
+ 
+   links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -149,6 +154,7 @@
     font-size: clamp(15px, 1.5vw, 18px);
   }
 
+
   .form-item span {
 
     color: red;
@@ -160,6 +166,7 @@
   input:focus+label,
   input:valid+label,
   textarea:focus+label,
+
   textarea:valid+label {
     font-size: clamp(13px, 1.3vw, 16px);
     color: #777;
