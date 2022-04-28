@@ -16,3 +16,19 @@ code {
   padding: 0px;
   box-sizing: border-box;
 }
+.Card{
+ 
+  background-color:#6FDFDF;
+  
+
+  
+}
+.Card i{
+  color:rgb(27, 91, 97);
+  font-size: 2rem;
+  padding: 1rem;
+}
+ .Card p{
+   color:black;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }

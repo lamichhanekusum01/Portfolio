@@ -83,13 +83,13 @@ function Contact ()  {
           <div class="form-item">
             <input type="text" name="email" onChange={handleChange} onBlur={checkValidate} value={formValues.email}/>
             <label>Email:</label>
-            <p> {formErrors.email}</p>
+            <span> {formErrors.email}</span>
 
           </div>
           <div class="form-item">
             <textarea class="text" name="textarea" onChange={handleChange} onBlur={checkValidate} value={formValues.textarea}></textarea>
             <label>Message:</label>
-            <p> {formErrors.textarea}</p>
+            <span> {formErrors.textarea}</span>
 
           </div>
           <button onClick={handleSubmit} class="submit-btn">Send</button>  

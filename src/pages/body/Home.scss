@@ -1,74 +1,173 @@
-@import"../../style/CommonStyle/variables";
+@import "../../style/CommonStyle/variables";
 @import "../../style/CommonStyle/reset";
 
-body {
-background-color:#6A9AC4;
-height: 100vh;
-}
+#home {
+  // .my_image{
 
-.my_image{
-    
-background-image:url('../../assets/Image/Intro-Image.png');
-background-repeat: no-repeat;
-background-position: bottom right;
-width:100%;
-height: 87.5%;
-position:fixed;
-}
-
-// .container{
-// margin:0;
-// padding:0;
-
-// }
-.wrapper{
+  // background-image:url('../../assets/Image/Intro-Image.png');
+  // background-repeat: no-repeat;
+  // background-position: bottom right;
+  // width:100%;
+  // height: 87.5%;
+  // position:fixed;
+  // }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+  }
+  .wrapper {
     display: flex;
-
-    // background-color: $primary-color;
-}
-h1 span{
+  }
+  h1 span {
     color: red;
-}
-// .image{
-//     background-image:url('../../assets/Image/Intro-Image.png');
-//     background-repeat: no-repeat;
-//     background-position: 60% -70%;
-//     background-size: contain;
-//     height: 80vh;
-//     top: 0;
-//     left: 0;
-//     margin-bottom: 0;
-//     z-index:2;
-//     margin-left: 15%;
+  }
 
-// }
-.social{
-
+  .social {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     font-size: 26px;
-    text-align: center;  
+    text-align: center;
     cursor: pointer;
     color: #000;
-    
-    
-}
-.laptop
-{
- text-align: center ;
-  font-size: 100px;
-  color:pink;
-}
+    padding: 4rem;
+  }
+  .link {
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: azure;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 5px 10px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  .laptop {
+    text-align: center;
+    font-size: 100px;
+    color: black;
+    margin-bottom: 20px 20px;
+    opacity: 0.5;
+  }
 
-.introduction{
-    display:flex;
-    flex-direction: column;
-    padding: 100px;
-    padding-left: 0;
-    
-}
-.intro{
+  .introduction {
     display: flex;
     flex-direction: column;
-    
+    padding-top: 100px;
+    padding-left: 0;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      display: inline-flex;
+      color: $secondary-color;
+      justify-content: center;
+      gap: 15px;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .hireMeButton {
+    background-color: $secondary-color;
+    filter: drop-shadow(2px 2px 3px #0003);
+    color: #fff;
+    font-family: $font-family;
+    font-size: clamp(16px, 1.6vw, 18px);
+    display: block;
+    padding: 10px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 20px;
+  }
+  .image {
+    background-image: url("../../assets/Image/Intro-Image.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 50%;
+    height: 91.5%;
+    position: fixed;
+    align-items: center;
+    margin-bottom: 150px;
+
+  }
+  .move-text {
+    color: white;
+    font-family: cursive;
+    font-weight: 80px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    a {
+      z-index: 20px;
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+      .image-container{
+          display: none;
+      }
+      p{
+          font-size: 1.5rem;
+          text-align: center;
+      }
+      h1{
+        font-size: 2rem;
+      }
+      .social{
+          padding: 2rem;
+      }
+ 
+}
+@media  screen and (width: 920px) {
+    .container{
+        position:relative;
+    }
+    .image-container{
+        display: none;
+    }
+    p{
+        padding: 2rem;
+        font-size: 20px;
+        text-align: center;
+    }
+    h1{
+      font-size: 3rem;
+    }
+    .intro-text {
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .social{
+        margin-top: 5rem;
+        width: 2 rem;
+    }
+    .buttons{
+        margin-top: 5rem;
+    }
+    .hireMeButton{
+        width: max-content;
+        padding: 2.5rem;
+        font-size: 2rem;
+    }
+    .move-text{
+        font-size: 2rem;
+    }
+}
 }
