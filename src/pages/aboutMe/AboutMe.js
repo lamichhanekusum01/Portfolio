@@ -46,8 +46,16 @@ const AboutMe = () => {
   </div>
 </div>
 <div className='container'>
+<<<<<<< Updated upstream
   
 </div>
+=======
+    <h1 className='education '> Education</h1>
+    <Education text="NEPAL BOARD" desc="I completed my primary level schooling with 86.86 % " duration="2003-2015" schoolname="Bal Geetanjali English School" />
+    <Education text="HSEB" desc="I completed my Higher Secondary level schooling with 74.86 % " duration="2015-2017" schoolname="Vs Niketan College" />
+    <Education text="TRIBHUWAN UNIVERSITY" desc="I am final year student of Bsc Csit program " duration="2017-2021" schoolname="Bal Geetanjali English Schoo" />
+  </div>
+>>>>>>> Stashed changes
 
 </div>
 
