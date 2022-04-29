@@ -1,9 +1,10 @@
 
 import React, { useState, useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../contact/Contact.scss"
 import axios from "axios";
 import SocialIcon from "../../components/commonComponent/SocialIcon"
-
 
 
 function Contact ()  {
@@ -29,8 +30,7 @@ function Contact ()  {
             email: formValues.email,
             message: formValues.textarea,
           })
-          .then((res) => console.log(res))
-          .catch((err) => console.log(err));
+          .then((err) => toast("Msg Sent"));
         setFormValues(initialValues);
       }
       
@@ -68,6 +68,7 @@ function Contact ()  {
                  </div>
       </div>
       <div class="contact-form-wrapper">
+        <ToastContainer/>
         <form >
           <div class="form-item">
             <input type="text" name="name" onChange={handleChange} onBlur={checkValidate} value={formValues.name}/>
@@ -86,7 +87,8 @@ function Contact ()  {
             <span> {formErrors.textarea}</span>
 
           </div>
-          <button onClick={handleSubmit} class="submit-btn">Send</button>  
+          <button onSubmit={handleSubmit} class="submit-btn">Send</button>  
+          <ToastContainer/>
         </form>
       </div>
     </div>
