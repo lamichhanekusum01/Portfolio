@@ -2,9 +2,6 @@
  @import "../../style/CommonStyle/variables";
 
 
-
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -84,16 +81,18 @@
       align-items: center;
       gap:10px;
       min-height: 65px;
+
       position: relative;
       top: 140px;
       background-color: $secondary-color;
       opacity: 0.5;
-    //   margin-top: 65px;
+    
       width: 100vw;
   }
   .toggleNav a{
       text-align: center;
   }
+
 
   .education{
       display: flex;
