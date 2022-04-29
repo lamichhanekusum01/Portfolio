@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,6 +13,7 @@ function Contact ()  {
   const initialValues = { name: "", email: "", textarea: ""};
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
+  const [formValid, setFormValid] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
@@ -22,17 +24,18 @@ function Contact ()  {
   };
   const handleSubmit = (e) => {
     debugger;
+    setFormValid(false);
     console.log("HEllo here");
     setFormErrors(validate(formValues));
-    if (Object.keys(formErrors).length === 0) {
+    if (Object.keys(formErrors).length === 0 && formValid) {
     
-              axios.post("http://localhost:4000/contact/", {
+      axios.post("http://localhost:4000/contact/", {
             fullname: formValues.name,
             email: formValues.email,
             message: formValues.textarea,
           })
           .then((res) =>{
-            toast("Msg send sucessfully");
+            toast("Yaay, I will respond to this query soon :D");
             setFormValues(initialValues);
           })
           .catch((err) => toast.error("Failed to submit!!"));
@@ -46,17 +49,21 @@ function Contact ()  {
     const errors = {};
 
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-   
+    setFormValid(true)
     if (!values.name) {
+      setFormErrors(false)
       errors.name = "Fullname is required";
     }
    
     if (!values.email) {
+      setFormValid(false)
       errors.email = "email is required";
     } else if (!regex.test(values.email)) {
+      setFormValid(false)
       errors.email = "This is not a valid email";
     }
     if (!values.textarea) {
+      setFormValid(false)
       errors.textarea = "textarea is required";
     }
     return errors;
