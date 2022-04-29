@@ -35,14 +35,6 @@ data.forEach(element => {
         <img src={social.image} alt={name}/>
       </a>
     </div>
-    // <a
-    //   href={src}
-    //   target="_blank"
-    //   class="contact-icon"
-    //   rel="noreferrer"
-    // >
-    //   <i class={icon}></i>
-    // </a>
   );
 };
 

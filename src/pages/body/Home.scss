@@ -20,7 +20,7 @@
     display: flex;
   }
   h1 span {
-    color: red;
+    color: #030b2e;
   }
 
   .social {
@@ -33,9 +33,9 @@
     padding: 4rem;
   }
   .link {
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: azure;
+      // border-radius: 50%;
+      // border: 1px solid black;
+      // background-color: azure;
     align-items: center;
     justify-content: center;
     font-size: 25px;
@@ -43,6 +43,10 @@
     width: 50px;
     height: 50px;
     text-decoration: none;
+    a{
+      transform: scale(1.1, 1.1);
+      filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+    }
   }
   .laptop {
     text-align: center;
@@ -69,6 +73,7 @@
     }
     p {
       display: flex;
+      font-size: x-large;
       justify-content: center;
     }
   }
@@ -96,6 +101,7 @@
     position: fixed;
     align-items: center;
     margin-bottom: 150px;
+    background-size: 540px;
 
   }
   .move-text {
@@ -112,6 +118,7 @@
     justify-content: center;
     margin-bottom: 20px;
     margin-left: -20px;
+    
     a {
       z-index: 20px;
       text-decoration: none;
@@ -123,14 +130,14 @@
           display: none;
       }
       p{
-          font-size: 1.5rem;
+          font-size: 0.8rem;
           text-align: center;
       }
       h1{
-        font-size: 2rem;
+        font-size:1 rem;
       }
       .social{
-          padding: 2rem;
+          padding: 1rem;
       }
  
 }

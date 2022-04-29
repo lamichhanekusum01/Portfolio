@@ -19,7 +19,7 @@ const Home = () => {
                 <i class="fa fa-laptop" aria-hidden="true"></i>
               </div>
               <h1>
-                I'm <span> Kusum</span> Lamichhane
+                I'm <span> Kusum  Lamichhane</span>
               </h1>
               <p className="move-text">
                 <Type />

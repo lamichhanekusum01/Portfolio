@@ -7,6 +7,11 @@
   gap: 2rem;
   
 }
+
+.Card{
+  padding: 10px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 
 * {
@@ -72,7 +77,11 @@ h1 {
 //   left: -135px;
 //   top: 30px; 
 // }
-
+.card-text
+{
+  color:$secondary-color;
+  font-size: 2rem;
+}
 h3 {
   font-size: 2.2rem;
 }
@@ -90,6 +99,10 @@ h3 {
 }
 .title {
   color:$secondary-color ;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
 }
 .education
 { 
@@ -99,12 +112,30 @@ h3 {
   justify-content: center;
   color:$secondary-color ;
   padding:2rem;
- 
 }
 }
 .education{
-  padding: 2rem;
+  padding: 1.5rem;
   color:#263A53;
+  align-items: center;
+}
+.speciality{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.Card{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  p{
+    color: $secondary-color;
+  }
+}
+
+.card-header
+{
+  font-size: 1rem !important;
+  font-weight: bold !important;
 }
 
 @media screen and (max-width: 561px)
@@ -120,6 +151,13 @@ h3 {
    }
   
 
+  }
+}
+@media screen and (min-width: 563px){
+  @media screen and (max-width: 700px){
+    h1{
+      font-size: 3rem;
+    }
   }
 }
 }
