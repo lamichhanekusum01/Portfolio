@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import "../contact/Contact.scss"
 import axios from "axios";
 import SocialIcon from "../../components/commonComponent/SocialIcon"
+import Footer from "../../components/commonComponent/Footer.js";
 
 
 function Contact ()  {
@@ -57,6 +58,7 @@ function Contact ()  {
   };
 
     return (
+      <>
     <section id="contact">
     <div class="contact-box">
       <div class="contact-links">
@@ -92,7 +94,10 @@ function Contact ()  {
         </form>
       </div>
     </div>
+
   </section>
+    <Footer/>
+</>
   )
 }
 

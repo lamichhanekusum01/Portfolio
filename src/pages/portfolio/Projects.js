@@ -3,6 +3,7 @@ import "../../pages/portfolio/Project.scss";
 import axios from "axios";
 import ProjectCard from "../../components/portfolio/ProjectCard.js";
 import img2 from "../../assets/Image/Todo.png";
+import Footer from "../../components/commonComponent/Footer";
 
 const Projects = () => {
   const [project, setProject] = useState([]);
@@ -36,6 +37,7 @@ const Projects = () => {
           })}
         </div>
       </div>
+      <Footer/>
       
     </div>
   )

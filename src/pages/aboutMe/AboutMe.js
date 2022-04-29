@@ -3,6 +3,8 @@ import "../../pages/aboutMe/AboutMe.scss";
 import image from "../../assets/Image/aboutImage.jpg";
 import Card from "../../components/commonComponent/Card.js";
 import Education from "../../components/commonComponent/Education.js";
+import Footer from "../../components/commonComponent/Footer.js";
+
 
 const AboutMe = () => {
   return (
@@ -70,6 +72,9 @@ const AboutMe = () => {
           />
         </div>
       </div>
+     <Footer/>
+
+
     </section>
   );
 };
