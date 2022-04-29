@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,9 +6,10 @@ import axios from "axios";
 import SocialIcon from "../../components/commonComponent/SocialIcon"
 import Footer from "../../components/commonComponent/Footer.js";
 
+toast.configure();
 
 function Contact ()  {
-    const initialValues = { name: "", email: "", textarea: ""};
+  const initialValues = { name: "", email: "", textarea: ""};
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const handleChange = (e) => {
@@ -21,21 +21,26 @@ function Contact ()  {
     
   };
   const handleSubmit = (e) => {
-     e.preventDefault();
+    debugger;
+    console.log("HEllo here");
     setFormErrors(validate(formValues));
     if (Object.keys(formErrors).length === 0) {
     
-              axios
-          .post("http://localhost:4000/contact/", {
+              axios.post("http://localhost:4000/contact/", {
             fullname: formValues.name,
             email: formValues.email,
             message: formValues.textarea,
           })
-          .then((err) => toast("Msg Sent"));
-        setFormValues(initialValues);
+          .then((res) =>{
+            toast("Msg send sucessfully");
+            setFormValues(initialValues);
+          })
+          .catch((err) => toast.error("Failed to submit!!"));
+        
       }
-      
-    }
+    e.preventDefault();
+    return false;
+  };
 
   const validate = (values) => {
     const errors = {};
@@ -89,8 +94,8 @@ function Contact ()  {
             <span> {formErrors.textarea}</span>
 
           </div>
-          <button onSubmit={handleSubmit} class="submit-btn">Send</button>  
-          <ToastContainer/>
+          <button onClick={handleSubmit} class="submit-btn">Send</button>  
+          
         </form>
       </div>
     </div>
