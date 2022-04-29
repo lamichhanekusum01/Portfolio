@@ -3,7 +3,6 @@ import SocialIcon from "../../components/commonComponent/SocialIcon";
 import "./Home.scss";
 import Type from "./Type.js";
 import resume from "../../assets/Kusum's resume.pdf";
-import Footer from "../../components/commonComponent/Footer.js";
 
 import { useNavigate } from "react-router";
 
