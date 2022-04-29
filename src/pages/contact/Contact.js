@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "../contact/Contact.scss"
 import axios from "axios";
+import SocialIcon from "../../components/commonComponent/SocialIcon"
 
 function Contact ()  {
     const initialValues = { name: "", email: "", textarea: ""};
@@ -59,7 +60,10 @@ function Contact ()  {
       <div class="contact-links">
         <h2>CONTACT</h2>
         <div class="links">
-          <div class="link">
+          <SocialIcon name="linkedin" />
+          <SocialIcon name="email" />
+          <SocialIcon name="github" />
+          {/* <div class="link">
             <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"/></a>
           </div>
           <div class="link">
@@ -70,7 +74,7 @@ function Contact ()  {
           </div>
           <div class="link">
             <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"/></a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div class="contact-form-wrapper">
