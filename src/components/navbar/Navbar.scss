@@ -34,6 +34,11 @@
       }
     }
   }
+ .active{
+    color:$primary-color;
+    text-decoration:underline ;
+    font-size: 17px;
+}
 }
 
 .logo {
@@ -142,11 +147,7 @@
     :hover {
       background-color: azure;
     }
-    .HomePageDiv nav div .active{
-      color: white;
-      text-decoration:underline ;
-      font-size: 17px;
-  }
+ 
 
   }
 
