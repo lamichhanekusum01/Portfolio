@@ -4,6 +4,8 @@ import "../contact/Contact.scss"
 import axios from "axios";
 import SocialIcon from "../../components/commonComponent/SocialIcon"
 
+
+
 function Contact ()  {
     const initialValues = { name: "", email: "", textarea: ""};
   const [formValues, setFormValues] = useState(initialValues);
@@ -60,22 +62,10 @@ function Contact ()  {
       <div class="contact-links">
         <h2>CONTACT</h2>
         <div class="links">
-          <SocialIcon name="linkedin" />
-          <SocialIcon name="email" />
-          <SocialIcon name="github" />
-          {/* <div class="link">
-            <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"/></a>
-          </div>
-          <div class="link">
-            <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"/></a>
-          </div>
-          <div class="link">
-            <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"/></a>
-          </div>
-          <div class="link">
-            <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"/></a>
-          </div> */}
-        </div>
+        <SocialIcon name="github" />
+              <SocialIcon name="email" />
+              <SocialIcon name="linkedin" />
+                 </div>
       </div>
       <div class="contact-form-wrapper">
         <form >
