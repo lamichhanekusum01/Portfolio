@@ -104,6 +104,22 @@ h3 {
 }
 .education{
   padding: 2rem;
+  color:#263A53;
 }
 
+@media screen and (max-width: 561px)
+{
+  .portfolio-container{
+    .hero--image
+    {
+      display: none;
+    }
+   .hero{
+     display: block;
+     height: auto !important;
+   }
+  
+
+  }
+}
 }
