@@ -12,12 +12,18 @@ const Projects = () => {
       .then((res) => setProject(res.data));
   }, []);
   return (
+
     <div className="Projects">
       <div class="container d-flex justify-content-around">
+      
         <div class="row ">
+        <div className="title">
+          <h1>MY PROJECTS</h1>
+        </div>
           {project.map((myproject) => {
             console.log(myproject);
             return (
+              
               <ProjectCard
                 image={img2}
                 title={myproject.projectTitle}
@@ -30,8 +36,9 @@ const Projects = () => {
           })}
         </div>
       </div>
+      
     </div>
-  );
-};
+  )
+}
 
 export default Projects;
