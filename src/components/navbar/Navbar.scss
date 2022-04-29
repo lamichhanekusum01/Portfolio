@@ -77,31 +77,33 @@
     top: 1.2rem;
 
 
+  }
+
+  .toggleNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 65px;
+
+    position: relative;
+    top: 140px;
+    background-color: $secondary-color;
+    opacity: 0.5;
+
+    width: 100vw;
+  }
+
+  .toggleNav a {
+    text-align: center;
+  }
+
 }
-  .toggleNav{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap:10px;
-      min-height: 65px;
-      position: absolute;
-      top: 10vh;
-      background-color: $secondary-color;
-      opacity: 0.5;
-      width:100%;
-      left: 0;
 
-  }
-
-  .menubar {
-    position: absolute;
-    top: 1.5rem;
-  }
-
-
-
-
+.menubar {
+  position: absolute;
+  top: 1.5rem;
 }
 
 .toggleNav {
@@ -149,9 +151,7 @@
     width: auto;
     box-shadow: 0 5px 20px;
 
-}
-    
-
   }
 
 
+}
