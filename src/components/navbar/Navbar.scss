@@ -1,6 +1,7 @@
  @import "../../style/CommonStyle/reset";
  @import "../../style/CommonStyle/variables";
 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -80,12 +81,17 @@
       align-items: center;
       gap:10px;
       min-height: 65px;
-      position: absolute;
-      top: 10vh;
+
+      position: relative;
+      top: 140px;
       background-color: $secondary-color;
       opacity: 0.5;
-      width:100%;
-      left: 0;
+    
+      width: 100vw;
+  }
+  .toggleNav a{
+      text-align: center;
+  }
 
 
   .education{

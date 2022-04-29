@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+.about-me{
+}
+
+.about-me .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.about-me * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-me :root {
+  --accent: #00b8ff;
+  --dark-grey: #282a2b;
+  --light-grey: #8d98a1;
+}
+
+.about-me body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: regular;
+  color: var(--light-grey);
+}
+
+.about-me .portfolio-container {
+  width: 1134px;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 1.5em;
+}
+
+.about-me .hero {
+  height: 860px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(10px, 1fr));
+  grid-column-gap: 12px;
+}
+
+.about-me .hero--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column: 1 / span 5;
+  padding: 100px 0;
+}
+
+.about-me .hero--bio {
+  grid-column: 7 / span 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me h1 {
+  font-size: 4rem;
+  color: var(--dark-grey);
+  margin-bottom: .785em;
+  position: relative;
+}
+
+.about-me h1::before {
+  content: "";
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  background: #333;
+  left: -135px;
+  top: 30px;
+}
+
+.about-me h3 {
+  font-size: 2.2rem;
+}
+
+.about-me .basic-info {
+  font-size: 1.5rem;
+  line-height: 155%;
+  padding-block: 2em;
+}
+
+.about-me nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-me .nav--btn {
+  text-align: center;
+  max-width: 100px;
+  display: inline;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .725rem;
+  padding: .785em 2em;
+  border: 1px solid var(--light-grey);
+  border-radius: 100px;
+  width: 100%;
+  color: #999;
+  margin-right: 12px;
+}
+
+.about-me .nav--btn:hover {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.about-me .project-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5em;
+  gap: 4em;
+}
+
+.about-me .project-thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: .2s ease;
+  transition-property: all;
+  transition-property: transform;
+}
+
+.about-me .project-thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.about-me .project-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me .project-title {
+  font-size: 1.4rem;
+  color: var(--dark-grey);
+  font-weight: bold;
+}
+
+.about-me .project-description {
+  padding-block: 2em;
+  line-height: 145%;
+  max-width: 40ch;
+}
+
+.about-me footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.about-me footer > p:hover {
+  color: var(--accent);
+}
+
+/*# sourceMappingURL=AboutMe.css.map */
