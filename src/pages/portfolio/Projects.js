@@ -11,20 +11,32 @@ const Projects = () => {
       .then(res=>setProject(res.data))
     },[])
   return (
-    <div className='Projects'>
-      <div class="container">
-    
-      <div class="row">
-        {
-          project.map(myproject=>{
-            return(
-              <ProjectCard image={img2} title={myproject.name} desc={myproject.description} alt={'Employee'} date={new Date(myproject.pushed_at).toDateString()}/>
-            )
-          })
-        }
+
+    <div className="Projects">
+      <div class="container d-flex justify-content-around">
+      
+        <div class="row ">
+        <div className="title">
+          <h1>MY PROJECTS</h1>
+        </div>
+          {project.map((myproject) => {
+            console.log(myproject);
+            return (
+              
+              <ProjectCard
+                image={img2}
+                title={myproject.projectTitle}
+                desc={"Description here"}
+                alt={"Employee"}
+                date={new Date(myproject.projectDate).toDateString()}
+                html_url={myproject.projectLink}
+              />
+            );
+          })}
+        </div>
       </div>
       
-    </div></div>
+    </div>
   )
 }
 

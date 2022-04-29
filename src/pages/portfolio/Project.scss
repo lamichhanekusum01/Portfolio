@@ -1,10 +1,25 @@
 .Projects{
-  
+  .container{
+    margin-top: 4rem;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:  #1f2e43;
+    padding: 1rem;
+  }
 img{
   height:105px;
   width:100%;
 }
-
+// .container{
+//   width: 100%;
+// }
+.btn-card:hover{
+  background-color: #1f2e43;
+  
+}
 .item{
  padding: 20px;
 }
