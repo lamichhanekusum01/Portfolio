@@ -1,6 +1,6 @@
 @import "../../style/CommonStyle/reset";
 @import "../../style/CommonStyle/variables";
-
+@import "../../style/CommonStyle/mixins";
 
 * {
   margin: 0px;
@@ -34,11 +34,12 @@
       }
     }
   }
- .active{
-    color:$primary-color;
-    text-decoration:underline ;
+
+  .active {
+    color: $primary-color;
+    text-decoration: underline;
     font-size: 17px;
-}
+  }
 }
 
 .logo {
@@ -147,7 +148,7 @@
     :hover {
       background-color: azure;
     }
- 
+
 
   }
 

@@ -1,10 +1,16 @@
 import React from "react";
 import "../../pages/aboutMe/AboutMe.scss";
 import image from "../../assets/Image/aboutImage.jpg";
+import Footer from "../../components/commonComponent/Footer.js";
 import Card from "../../components/commonComponent/Card.js";
 import Education from "../../components/commonComponent/Education.js";
-import Footer from "../../components/commonComponent/Footer.js";
-
+import jsimage from "../../assets/Image/javascript.png";
+import aspimage from "../../assets/Image/asp.net.png";
+import javaimage from "../../assets/Image/java.png";
+import cssimage from "../../assets/Image/css.png";
+import reactimage from "../../assets/Image/react_nobg.png";
+import mongodbimage from "../../assets/Image/mongoodb.png";
+import Skills from "../../components/commonComponent/Skills";
 
 const AboutMe = () => {
   return (
@@ -22,10 +28,74 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
+        <div className="container specialities">
+          <h1 className="title">My Specialities</h1>
+          <div class="main">
+            <div className="container">
+              <div className="row">
+                
+                <Skills
+                  alt="javascript"
+                  image={jsimage}
+                  className="Skill"
+                  experince="I have experience of writing codes in Js for 6 months"
+                  langauge="JAVASCRIPT"
+                  level="Beginner"
+                />
+                <Skills
+                  alt="Asp .Net"
+                  image={aspimage}
+                  className="Skill"
+                  experince="I have experience of writing codes in Js for 3 months"
+                  langauge="C#"
+                  level="Beginner"
+                />
+                <Skills
+                  alt="Java"
+                  image={javaimage}
+                  className="Skill"
+                  experince="I have experience of writing codes in Java for 3 months"
+                  langauge="JAVA"
+                  level="Beginner"
+                />
+                <Skills
+                  alt="Css"
+                  image={cssimage}
+                  className="Skill"
+                  experince="I have experience using css and sass for styling the webpages for 6 months"
+                  langauge="CSS"
+                  level="Beginner"
+                />
+                <Skills
+                  alt="Mongoo"
+                  image={mongodbimage}
+                  className="Skill"
+                  experince="I have experience using mongoodb database for 2 months"
+                  langauge="MONGODB"
+                  level="Beginner"
+                />
+                <Skills
+                  alt="React"
+                  image={reactimage}
+                  className="Skill"
+                  experince="I have experience of designing the web pages for 2 months"
+                  langauge="REACT"
+                  level="Beginner"
+                />
+                {/* <Skills
+                  alt="React"
+                  image={reactimage}
+                  className="Skill"
+                  experince="I have experience of writing codes in Java for 3 months"
+                  langauge="REACT"
+                  level="Beginner"
+                /> */}
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h1 className="title">My Specialities</h1>
-
-        <div className="container">
+        {/* <div className="container">
           <div class="row">
             <div class="col ">
               <Card
@@ -49,8 +119,9 @@ const AboutMe = () => {
               />
             </div>
           </div>
-        </div>
-        <div className="container">
+        </div> */}
+
+        {/* <div className="container">
           <h1 className="education "> Education</h1>
           <Education
             text="NEPAL BOARD"
@@ -70,13 +141,12 @@ const AboutMe = () => {
             duration="2017-2021"
             schoolname="Madan Bhandari Memorial College"
           />
-        </div>
+        </div> */}
       </div>
-     <Footer/>
-
-
+      <Footer />
     </section>
   );
 };
 
-export default AboutMe;
+export default AboutMe
+
