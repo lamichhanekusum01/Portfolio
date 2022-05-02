@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import "../../pages/aboutMe/AboutMe.scss";
 import image from "../../assets/Image/aboutImage.jpg";
+import Footer from "../../components/commonComponent/Footer.js";
 import Card from "../../components/commonComponent/Card.js";
 import Education from "../../components/commonComponent/Education.js";
-import Footer from "../../components/commonComponent/Footer.js";
 import jsimage from "../../assets/Image/javascript.png";
 import aspimage from "../../assets/Image/asp.net.png";
 import javaimage from "../../assets/Image/java.png";
@@ -100,4 +100,5 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default AboutMe
+

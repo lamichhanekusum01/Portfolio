@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
+import logo from "../../assets/Image/logo.png"
 
 const Navbar = () => {
+  const [activeLink, activeLinkSet] = useState("home");
   const [toggleMenu, setToggleMenu] = useState(false);
   const toggleMenuBar = () => {
     if (window.innerWidth <= 768) {
@@ -21,18 +23,29 @@ const Navbar = () => {
     <>
       <header className="HomePageDiv sticky-top">
         <nav>
-          <div className="logo">Kusum</div>
+          <div className="logo">
+            <img src={logo} />
+          </div>
           <div className={toggleMenu ? "navLinks toggleNav" : "navLinks"}>
-            <Link to="/" onClick={toggleMenuBar}>
+              <Link to="/" className={activeLink === "home" ? "active" : null} onClick ={()=>{toggleMenuBar();activeLinkSet("home")}}>
               Home
             </Link>
-            <Link to="/portfolio" onClick={toggleMenuBar}>
+            <Link to="/portfolio" className={activeLink === "portfolio" ? "active" : null} onClick ={()=>{toggleMenuBar();activeLinkSet("portfolio")}}>
+
             Projects
             </Link>
-            <Link to="/about" onClick={toggleMenuBar}>
+            <Link to="/about" className={activeLink === "about" ? "active" : null} onClick ={()=>{toggleMenuBar();activeLinkSet("about")}}>
+
               About Me
             </Link>
-            <Link to="/contact" onClick={toggleMenuBar}>
+            <Link
+              to="/contact"
+              className={activeLink === "contact" ? "active" : null}
+              onClick={() => {
+                toggleMenuBar();
+                activeLinkSet("contact");
+              }}
+            >
               Contact
             </Link>
           </div>

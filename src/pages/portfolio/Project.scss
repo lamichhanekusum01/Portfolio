@@ -1,5 +1,15 @@
+
 .Projects{
-  
+  .container{
+    margin-top: 4rem;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:  #1f2e43;
+    padding: 1rem;
+  }
 img{
   height:105px;
   width:100%;
@@ -7,6 +17,10 @@ img{
 // .container{
 //   width: 100%;
 // }
+.btn-card:hover{
+  background-color: #1f2e43;
+  
+}
 .item{
  padding: 20px;
  flex: 33.33%;
@@ -20,6 +34,15 @@ img{
   font-size:15px;
   transition:1s;
   cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  }
 }
 .item-card-title i{  
   font-size:15px;
@@ -28,6 +51,7 @@ img{
   color:#ffa710
   
 }
+
 .card-title i:hover{
   transform: scale(1.25) rotate(100deg); 
   color:#18d4ca;
@@ -62,5 +86,4 @@ img{
 }
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
   transform: scale3d(1, 1, 1);
-}
 }
