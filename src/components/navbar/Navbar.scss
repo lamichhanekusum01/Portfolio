@@ -1,12 +1,7 @@
-<<<<<<< Updated upstream
- @import "../../style/CommonStyle/reset";
- @import "../../style/CommonStyle/variables";
-=======
 @import "../../style/CommonStyle/reset";
 @import "../../style/CommonStyle/variables";
 @import "../../style/CommonStyle/mixins";
 
->>>>>>> Stashed changes
 
 
 
@@ -62,12 +57,13 @@
    .menubar .fa-bars{
     color: white !important;
     margin-right: 45px;
-   }
-   .HomePageDiv nav{
-       margin: 0;
-      background-color: $secondary-color;
-        min-height: 65px;
-        height: 10vh;
+  }
+
+  .HomePageDiv nav {
+    margin: -15px;
+    background-color: $secondary-color;
+    min-height: 65px;
+    height: 10vh;
 
    }
    header nav h3{

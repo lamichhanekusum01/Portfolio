@@ -64,17 +64,12 @@
   .specialities {
     @include flex-center-row
   }
+  .skillWrap
+  {
+    background-color: rgba(255, 255, 255, 0.619);
+    padding: 1rem;
+  }
 
-
-  // h1::before {
-  //   content: "";
-  //   width: 100px;
-  //   height: 4px;
-  //   position: relative;
-  //   background: #333;
-  //   left: -135px;
-  //   top: 30px; 
-  // }
   .main {
     @include flex-center-row;
 
@@ -83,15 +78,11 @@
 
       &:hover {
         transition: transform .2s;
-        -ms-transform: scale(1.5);
-        /* IE 9 */
-        -webkit-transform: scale(1.5);
-        /* Safari 3-8 */
+        -ms-transform: scale(1.5);     
+        -webkit-transform: scale(1.5);      
         transform: scale(1.5);
 
-
       }
-
 
     }
 
@@ -109,9 +100,11 @@
       }
 
       p {
+        @include line-clamp(3);
         font-size: 1.5rem;
         line-height: 155%;
         color: #263A53;
+        
 
       }
       strong{

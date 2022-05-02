@@ -1,67 +1,5 @@
 import React from 'react'
 import "../../pages/aboutMe/AboutMe.scss";
-<<<<<<< Updated upstream
-import image from '../../assets/Image/aboutImage.jpg'
-import Card from '../../components/commonComponent/Card.js'
-import Education from '../../components/commonComponent/Education.js'
-
-const AboutMe = () => {
-  return (
-         <section className='about-me'>
-           <div class="portfolio-container">
-  <div class="hero">
-    <img src={image} alt="Kusum" class="hero--image"/>
-    <div class="hero--bio">
-      <h1>Kusum Lamichhane</h1>
-      <h3>Frontend Designer</h3>
-      <p class="basic-info">I’m a Frontend designer. I’m passionate about creating good looking website. I have worked with incredibly talented people across different companies.</p>
-     
-    </div>
-  </div>
-  <div className='container'>
-    <h1 className='title'>My Specialities</h1>
-  </div>
-  <div className="container">
-  <div class="row">
-    <div class="col ">
-    <Card      text="Front-End"
-            img="fas fa-desktop"
-            description="Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser."
-         
-     />
-    </div>
-    <div class="col">
-    <Card  text="Back-End"
-            img="fas fa-code"
-            description="Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser."
-         
-     />
-    </div>
-    <div class="col">
-    <Card  text="QA"
-            img="fas fa-rocket"
-            description="Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser."
-     />
-    
-    </div>
-  </div>
-</div>
-<div className='container'>
-    <h1 className='education '> Education</h1>
-    <Education text="NEPAL BOARD" desc="I completed my primary level schooling with 86.86 % " duration="2003-2015" schoolname="Bal Geetanjali English School" />
-    <Education text="HSEB" desc="I completed my Higher Secondary level schooling with 74.86 % " duration="2015-2017" schoolname="Vs Niketan College" />
-    <Education text="TRIBHUWAN UNIVERSITY" desc="I am final year student of Bsc Csit program " duration="2017-2021" schoolname="Bal Geetanjali English Schoo" />
-  </div>
-
-</div>
-
-
-  
-
-     </section>    
-  )
-}
-=======
 import image from "../../assets/Image/aboutImage.jpg";
 import Card from "../../components/commonComponent/Card.js";
 import Education from "../../components/commonComponent/Education.js";
@@ -73,11 +11,13 @@ import cssimage from "../../assets/Image/css.png";
 import reactimage from "../../assets/Image/react_nobg.png";
 import mongodbimage from "../../assets/Image/mongoodb.png";
 import Skills from "../../components/commonComponent/Skills";
+import Langauge from "../../components/commonComponent/Langauge";
 
 const AboutMe = () => {
   return (
     <section className="about-me">
       <div class="portfolio-container">
+        <div className="container">
         <div class="hero">
           <img src={image} alt="Kusum" class="hero--image" />
           <div class="hero--bio">
@@ -90,12 +30,12 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
+        </div>
         <div className="container specialities">
           <h1 className="title">My Specialities</h1>
           <div class="main">
             <div className="container">
               <div className="row">
-                
                 <Skills
                   alt="javascript"
                   image={jsimage}
@@ -144,71 +84,20 @@ const AboutMe = () => {
                   langauge="REACT"
                   level="Beginner"
                 />
-                {/* <Skills
-                  alt="React"
-                  image={reactimage}
-                  className="Skill"
-                  experince="I have experience of writing codes in Java for 3 months"
-                  langauge="REACT"
-                  level="Beginner"
-                /> */}
               </div>
             </div>
           </div>
         </div>
-
         {/* <div className="container">
-          <div class="row">
-            <div class="col ">
-              <Card
-                text="Front-End"
-                img="fas fa-desktop"
-                description="I can write HTML CSS and Javascript code . I can work on React projects"
-              />
-            </div>
-            <div class="col">
-              <Card
-                text="Back-End"
-                img="fas fa-code"
-                description="I am familiar with Asp .NET  MVC technology and can generate the APIS from Express."
-              />
-            </div>
-            <div class="col">
-              <Card
-                text="QA"
-                img="fas fa-rocket"
-                description="I am familiar with automation testing using pycharm and can write a test cases "
-              />
-            </div>
-          </div>
+        <Education text="Nepal Examination Board" schoolname="Bal Geetanjali School" desc= "Completed my primary level education with 86.67 %"/>
+        <Education text="Higher Secondary Examination Board" schoolname="Vs Niketan Higher Secondary School" desc= "Completed my secondary level education with 74.67 %"/>
+        <Education text="Tribhuwan University" schoolname="Madan Bhandari Memorial College" desc= "Final year student of bsc csit program"/>
         </div> */}
-
-        {/* <div className="container">
-          <h1 className="education "> Education</h1>
-          <Education
-            text="NEPAL BOARD"
-            desc="I completed my primary level schooling with 86.86 % "
-            duration="2003-2015"
-            schoolname="Bal Geetanjali English School"
-          />
-          <Education
-            text="HSEB"
-            desc="I completed my Higher Secondary level schooling with 74.86 % "
-            duration="2015-2017"
-            schoolname="Vs Niketan College"
-          />
-          <Education
-            text="TRIBHUWAN UNIVERSITY"
-            desc="I am final year student of Bsc Csit program "
-            duration="2017-2021"
-            schoolname="Madan Bhandari Memorial College"
-          />
-        </div> */}
+        
       </div>
-      <Footer />
+      <Footer/>
     </section>
   );
 };
->>>>>>> Stashed changes
 
-export default AboutMe
+export default AboutMe;
