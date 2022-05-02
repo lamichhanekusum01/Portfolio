@@ -9,7 +9,7 @@ const Projects = () => {
   const [project, setProject] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:4000/project/allProject")
+      .get("https://sheltered-earth-52104.herokuapp.com/project/allProject")
       .then((res) => setProject(res.data));
   }, []);
   return (
@@ -28,7 +28,6 @@ const Projects = () => {
               <ProjectCard
                 image={img2}
                 title={myproject.projectTitle}
-                desc={"Description here"}
                 alt={"Employee"}
                 date={new Date(myproject.projectDate).toDateString()}
                 html_url={myproject.projectLink}

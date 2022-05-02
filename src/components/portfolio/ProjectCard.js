@@ -13,9 +13,8 @@ const ProjectCard = ({title,desc,image,date,alt,html_url}) => {
         <h5 class="item-card-title">
           {title}
         </h5>
-        <h6>
+        <h6 className="date">
         {date}
-          
         </h6>
         <p class="card-text">
          {desc}
