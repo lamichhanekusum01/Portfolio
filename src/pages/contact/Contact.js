@@ -29,13 +29,13 @@ function Contact ()  {
     setFormErrors(validate(formValues));
     if (Object.keys(formErrors).length === 0 && formValid) {
     
-      axios.post("http://localhost:4000/contact/", {
+      axios.post("https://sheltered-earth-52104.herokuapp.com/contact/", {
             fullname: formValues.name,
             email: formValues.email,
             message: formValues.textarea,
           })
           .then((res) =>{
-            toast("Message sent sucesfully");
+            toast("Kusum will receive your Message");
             setFormValues(initialValues);
           })
           .catch((err) => toast.error("Failed to submit!!"));
