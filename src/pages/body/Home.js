@@ -39,10 +39,10 @@ const Home = () => {
                   </a>
                 </div>
 
-                <div className="social">
-                  <SocialIcon name="github" />
-                  <SocialIcon name="email" />
-                  <SocialIcon name="linkedin" />
+                <div className="social" >
+                  <SocialIcon name="github" target="_blank" />
+                  <SocialIcon name="email" target="_blank" />
+                  <SocialIcon name="linkedin" target="_blank" />
                 </div>
               </div>
             </div>

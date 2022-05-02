@@ -76,9 +76,9 @@ function Contact ()  {
       <div class="contact-links">
         <h2>CONTACT</h2>
         <div class="links">
-        <SocialIcon name="github" />
-              <SocialIcon name="email" />
-              <SocialIcon name="linkedin" />
+        <SocialIcon name="github"target="_blank" />
+              <SocialIcon name="email" target="_blank"/>
+              <SocialIcon name="linkedin"target="blank" />
                  </div>
       </div>
       <div class="contact-form-wrapper">

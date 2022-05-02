@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
+import logo from "../../assets/Image/logo.png"
 
 const Navbar = () => {
   const [activeLink, activeLinkSet] = useState("home");
@@ -22,7 +23,9 @@ const Navbar = () => {
     <>
       <header className="HomePageDiv sticky-top">
         <nav>
-          <div className="logo">Kusum</div>
+          <div className="logo">
+            <img src={logo} />
+          </div>
           <div className={toggleMenu ? "navLinks toggleNav" : "navLinks"}>
               <Link to="/" className={activeLink === "home" ? "active" : null} onClick ={()=>{toggleMenuBar();activeLinkSet("home")}}>
               Home
