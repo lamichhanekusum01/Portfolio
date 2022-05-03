@@ -61,9 +61,9 @@
 
   }
 
-  .specialities {
-    @include flex-center-row
-  }
+  // .specialities {
+  //   @include flex-center-row
+  // }
   .skillWrap
   {
     background-color: rgba(255, 255, 255, 0.619);
@@ -140,6 +140,7 @@
 
   .title {
     color: $secondary-color;
+    @include flex-center-row
   }
 
   .education {
@@ -152,11 +153,24 @@
 
     }
   }
-
-  .education {
-    padding: 2rem;
-    color: #263A53;
+  
+.education{  
+    margin:2rem;
+    background-color: rgba(34, 252, 41, 0.507);
+    height:200px;
   }
+  .education-header{
+    height: 2rem;
+  
+  }
+  .education-title
+  {
+font-size:10px
+  }
+.education-text{
+  @include flex-center-row
+}
+}
 
   @media screen and (max-width: 561px) {
     .portfolio-container {
@@ -172,4 +186,3 @@
 
     }
   }
-}

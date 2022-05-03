@@ -11,7 +11,6 @@ import cssimage from "../../assets/Image/css.png";
 import reactimage from "../../assets/Image/react_nobg.png";
 import mongodbimage from "../../assets/Image/mongoodb.png";
 import Skills from "../../components/commonComponent/Skills";
-import Langauge from "../../components/commonComponent/Langauge";
 
 const AboutMe = () => {
   return (
@@ -31,7 +30,7 @@ const AboutMe = () => {
           </div>
         </div>
         </div>
-        <div className="container specialities">
+         <div className="container">
           <h1 className="title">My Specialities</h1>
           <div class="main">
             <div className="container">
@@ -87,12 +86,24 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-        </div>
-        {/* <div className="container">
+        </div> 
+{/* <section id="Education">
+<h1 className="title">My Education</h1>
+
+  
+  
+
+         <div className="container">
+        <div className="row">
+          <div className="col-sm-4">          
         <Education text="Nepal Examination Board" schoolname="Bal Geetanjali School" desc= "Completed my primary level education with 86.67 %"/>
-        <Education text="Higher Secondary Examination Board" schoolname="Vs Niketan Higher Secondary School" desc= "Completed my secondary level education with 74.67 %"/>
-        <Education text="Tribhuwan University" schoolname="Madan Bhandari Memorial College" desc= "Final year student of bsc csit program"/>
-        </div> */}
+        </div>
+        <div className="col-sm-4"><Education text="Higher Secondary Examination Board" schoolname="Vs Niketan Higher Secondary School" desc= "Completed my secondary level education with 74.67 %"/></div>
+        <div className="col-sm-4"><Education text="Tribhuwan University" schoolname="Madan Bhandari Memorial College" desc= "Final year student of bsc csit program"/></div>
+        </div>
+        </div> 
+      </section> */}
+
         
       </div>
       <Footer/>

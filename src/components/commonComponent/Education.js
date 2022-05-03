@@ -2,15 +2,15 @@ import React from "react"
 function Education(props)
 {
     return (
-        <div class="card text-center ">
-        <div class="card-header">
+        <div class="education text-center ">
+        <div class="education-header">
           {props.text}
         </div>
-        <div class="card-body">
-        <h5 class="card-title">{props.schoolname}</h5>
-          <p class="card-text">{ props.desc }</p>
+        <div class="education-body">
+        <p class="education-title">{props.schoolname}</p>
+          <p class="education-text">{ props.desc }</p>
         </div>
-        <div class="card-footer text-muted">
+        <div class="education-footer text-muted">
        { props.duration}
         </div>
       </div>
