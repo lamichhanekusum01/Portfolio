@@ -24,7 +24,7 @@ const Navbar = () => {
       <header className="HomePageDiv sticky-top">
         <nav>
           <div className="logo">
-            <img src={logo} />
+          <a href="/"><span>Kusum</span></a> 
           </div>
           <div className={toggleMenu ? "navLinks toggleNav" : "navLinks"}>
               <Link to="/" className={activeLink === "home" ? "active" : null} onClick ={()=>{toggleMenuBar();activeLinkSet("home")}}>
