@@ -23,12 +23,14 @@
 
   h1 span {
     color: #030b2e;
+    font-family:test;
+    
+    
   }
 
   .social {
     display: flex;
-    justify-content: space-around;
-    font-size: 26px;
+    justify-content: center;
     text-align: center;
     cursor: pointer;
     color: #000;
