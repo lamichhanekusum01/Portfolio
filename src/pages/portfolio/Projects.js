@@ -21,6 +21,7 @@ const Projects = () => {
         <div className="title">
           <h1>MY PROJECTS</h1>
         </div>
+        <div className="sub-title"><p>Check Out My Latest Project</p></div>
           {project.map((myproject) => {
             console.log(myproject);
             return (
