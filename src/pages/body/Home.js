@@ -39,10 +39,15 @@ const Home = () => {
                   </a>
                 </div>
 
-                <div className="social" >
+                {/* <div className="social" >
                   <SocialIcon name="github" target="_blank" />
                   <SocialIcon name="email" target="_blank" />
                   <SocialIcon name="linkedin" target="_blank" />
+                </div> */}
+                <div className="social">
+                <a href="https://github.com/lamichhanekusum01"><i class="fab fa-github"></i></a>
+                <a href="https://mail.google.com/"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>

@@ -4,15 +4,18 @@ import axios from "axios";
 import ProjectCard from "../../components/portfolio/ProjectCard.js";
 import img2 from "../../assets/Image/Todo.png";
 import Footer from "../../components/commonComponent/Footer";
+import { useGetProjectQuery } from "../../services/workApi";
 
 const Projects = () => {
-  const [project, setProject] = useState([]);
-  useEffect(() => {
-    axios
-      .get("https://sheltered-earth-52104.herokuapp.com/project/allProject")
-      .then((res) => setProject(res.data));
-  }, []);
+  const {data, error,isLoading}=useGetProjectQuery()
+  // useEffect(() => {
+  //   axios
+  //     .get("https://sheltered-earth-52104.herokuapp.com/project/allProject")
+  //     .then((res) => setProject(res.data));
+  // }, []);
+   console.log(data);
   return (
+
 
     <div className="Projects">
       <div class="container d-flex justify-content-around">
@@ -22,8 +25,11 @@ const Projects = () => {
           <h1>MY PROJECTS</h1>
         </div>
         <div className="sub-title"><p>Check Out My Latest Project</p></div>
-          {project.map((myproject) => {
-            console.log(myproject);
+        <>{isLoading && <span>Loading....</span>}</>
+      <>{error && <span>An Error Occured!</span>}</>
+    
+          {data && data.map((myproject) => {
+            console.log(data);
             return (
               
               <ProjectCard
